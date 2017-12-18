@@ -1,4 +1,6 @@
- Loki.Rat
+# Loki.Rat
+<html>
+<head>
 <style>
 p {color:green;}
 </style>
@@ -20,3 +22,5 @@ p {color:green;}
     |||||||░  ░       ░ ░     ░  ░       ░       ░        ░              ░  ░                |||||||      (((_ _/   \_ _)))
     |||||||░                                                                                 |||||||
 </p>
+ </body>
+</html>
