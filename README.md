@@ -1,4 +1,4 @@
-# Loki.Rat
+# Loki.Rat :mouse:
      
     ||||||||||||||||||||||||||||||||||||||||||||00000000000|||||||||||||||||||||||||||||||||||||||||              (\
     ||||||||||||||||||||||||||||||||||||||||||||00000000000|||||||||||||||||||||||||||||||||||||||||               \\
@@ -17,4 +17,4 @@
     |||||||░  ░       ░ ░     ░  ░       ░       ░        ░              ░  ░                |||||||      (((_ _/   \_ _)))
     |||||||░                                                                                 |||||||
     
-Loki.Rat is a fork of the Ares RAT[link to Ares!](https://github.com/sweetsoftware/Ares), it integrates new modules, like the backdoor support for the android platform
+Loki.Rat is a fork of the [Ares RAT](https://github.com/sweetsoftware/Ares), it integrates new modules, like the backdoor support for the android platform
