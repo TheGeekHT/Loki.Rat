@@ -1,6 +1,5 @@
 # Loki.Rat
-      <div class="container">
-          <div style="white-space: pre;color: green;font-weight: bold">
+     
     ||||||||||||||||||||||||||||||||||||||||||||00000000000|||||||||||||||||||||||||||||||||||||||||              (\
     ||||||||||||||||||||||||||||||||||||||||||||00000000000|||||||||||||||||||||||||||||||||||||||||               \\
     ||||||||||||||||||||||||||||||||||||||||||||00000000000|||||||||||||||||||||||||||||||||||||||||                ))
@@ -17,6 +16,5 @@
     |||||||░ ░      ░ ░ ░ ▒     ░ ░░ ░     ▒ ░    ░        ░░   ░      ░   ▒        ░        |||||||        _)  \ ` /  (_
     |||||||░  ░       ░ ░     ░  ░       ░       ░        ░              ░  ░                |||||||      (((_ _/   \_ _)))
     |||||||░                                                                                 |||||||
-        </div>
-     </div>
-      Loki.Rat is a fork of the Ares RAT[link to Ares!](https://github.com/sweetsoftware/Ares), it integrates new modules, like the backdoor support for the android platform
+    
+Loki.Rat is a fork of the Ares RAT[link to Ares!](https://github.com/sweetsoftware/Ares), it integrates new modules, like the backdoor support for the android platform
