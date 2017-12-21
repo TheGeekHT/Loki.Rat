@@ -44,7 +44,7 @@ Open a terminal windows and type this command :
  Initialize the database:
  ```
      cd server
-    ./ares.py initdb
+    ./loki.py initdb
  ```    
  In order to compile Windows agents on Linux, setup wine (optional):
  ```
@@ -54,11 +54,51 @@ Open a terminal windows and type this command :
  
  Run with the builtin (debug) server:
  ```
-     ./ares.py runserver -h 1.0.1.0 -p 8080 --threaded
+     ./loki.py runserver -h 1.0.1.0 -p 8080 --threaded
  ```
  Or run using gunicorn:
  ```
-     gunicorn ares:app -b 1.0.1.0:8080 --threads 20
+     gunicorn loki:app -b 1.0.1.0:8080 --threads 20
  ```
  The server should now be accessible on http://1.0.1.0:8080
+ 
+ ## Payload
+ Run the Python payload (update config.py to suit your needs):
+ ```
+     cd agent
+     ./payload.py
+ ```
+ Build a new payload to a standalone binary:
+ ```
+     ./builder.py -p Linux --server http://localhost:8080 -o payload
+     ./payload
+ ```
+ To see a list of supported options, run ./builder.py -h
+ ```./agent/builder.py -h
+usage: builder.py [-h] -p PLATFORM --server SERVER -o OUTPUT
+                  [--hello-interval HELLO_INTERVAL] [--idle_time IDLE_TIME]
+                  [--max_failed_connections MAX_FAILED_CONNECTIONS]
+                  [--persistent]
+
+Builds an Ares agent.
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -p PLATFORM, --platform PLATFORM
+                        Target platform (Windows, Linux).
+  --server SERVER       Address of the CnC server (e.g http://localhost:8080).
+  -o OUTPUT, --output OUTPUT
+                        Output file name.
+  --hello-interval HELLO_INTERVAL
+                        Delay (in seconds) between each request to the CnC.
+  --idle_time IDLE_TIME
+                        Inactivity time (in seconds) after which to go idle.
+                        In idle mode, the agent pulls commands less often
+                        (every <hello_interval> seconds).
+  --max_failed_connections MAX_FAILED_CONNECTIONS
+                        The agent will self destruct if no contact with the
+                        CnC can be made <max_failed_connections> times in a
+                        row.
+  --persistent          Automatically install the agent on first run.
+```
  Made with :yellow_heart: in HAITI 🇭🇹 
