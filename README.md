@@ -65,7 +65,7 @@ Open a terminal windows and type this command :
  ## Payload
  Run the Python payload (update config.py to suit your needs):
  ```
-     cd agent
+     cd payload
      ./payload.py
  ```
  Build a new payload to a standalone binary:
@@ -74,31 +74,64 @@ Open a terminal windows and type this command :
      ./payload
  ```
  To see a list of supported options, run ./builder.py -h
- ```./agent/builder.py -h
-usage: builder.py [-h] -p PLATFORM --server SERVER -o OUTPUT
-                  [--hello-interval HELLO_INTERVAL] [--idle_time IDLE_TIME]
-                  [--max_failed_connections MAX_FAILED_CONNECTIONS]
-                  [--persistent]
+ ```
+     ./payload/builder.py -h
+     usage: builder.py [-h] -p PLATFORM --server SERVER -o OUTPUT
+                    [--hello-interval HELLO_INTERVAL] [--idle_time IDLE_TIME]
+                    [--max_failed_connections MAX_FAILED_CONNECTIONS]
+                    [--persistent]
 
-Builds an Ares agent.
+     Builds an Loki.Rat payload
 
-optional arguments:
-  -h, --help            show this help message and exit
-  -p PLATFORM, --platform PLATFORM
-                        Target platform (Windows, Linux).
-  --server SERVER       Address of the CnC server (e.g http://localhost:8080).
-  -o OUTPUT, --output OUTPUT
-                        Output file name.
-  --hello-interval HELLO_INTERVAL
+     optional arguments:
+     -h, --help            show this help message and exit
+     -p PLATFORM, --platform PLATFORM
+                         Target platform (Windows, Linux).
+     --server SERVER       Address of the CnC server (e.g http://1.0.1.0:8080).
+     -o OUTPUT, --output OUTPUT
+                         Output file name.
+     --hello-interval HELLO_INTERVAL
                         Delay (in seconds) between each request to the CnC.
-  --idle_time IDLE_TIME
-                        Inactivity time (in seconds) after which to go idle.
-                        In idle mode, the agent pulls commands less often
-                        (every <hello_interval> seconds).
-  --max_failed_connections MAX_FAILED_CONNECTIONS
-                        The agent will self destruct if no contact with the
-                        CnC can be made <max_failed_connections> times in a
-                        row.
-  --persistent          Automatically install the agent on first run.
+     --idle_time IDLE_TIME
+                         Inactivity time (in seconds) after which to go idle.
+                         In idle mode, the agent pulls commands less often
+                         (every <hello_interval> seconds).
+     --max_failed_connections MAX_FAILED_CONNECTIONS
+                         The agent will self destruct if no contact with the
+                         CnC can be made <max_failed_connections> times in a
+                         row.
+     --persistent          Automatically install the agent on first run.
 ```
- Made with :yellow_heart: in HAITI 🇭🇹 
+Supported payload commands
+```
+     <any shell command>
+     Executes the command in a shell and return its output.
+
+     upload <local_file>
+     Uploads <local_file> to server.
+
+     download <url> <destination>
+     Downloads a file through HTTP(S).
+
+     zip <archive_name> <folder>
+     Creates a zip archive of the folder.
+
+     screenshot
+     Takes a screenshot.
+
+     python <command|file>
+     Runs a Python command or local file.
+
+     persist
+     Installs the agent.
+
+     clean
+     Uninstalls the agent.
+
+     exit
+     Kills the agent.
+
+     help
+     This help.
+```
+ Made with :heart: in HAITI 🇭🇹 
