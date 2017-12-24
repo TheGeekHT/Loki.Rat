@@ -130,8 +130,18 @@ Supported payload commands
 
      exit
      Kills the agent.
-
+     
+     record
+          -h, --help            show this help message and exit
+          -t RECORD_SECONDS, --time RECORD_SECONDS
+                                Set a timing in seconds for record. (e.g 10)
+          -c CHANNELS, --channel CHANNELS
+                                Channel for the microphone (e.g 2).
+          -ch CHUNK, --chunk CHUNK
+                                Chunk for the microphone (e.g 1024).
+          -r RATE, --rate RATE  Rate (e.g 44100).
+          
      help
      This help.
 ```
- Made with :heart: in HAITI 🇭🇹 
+ <> with :heart: in HAITI 🇭🇹 
