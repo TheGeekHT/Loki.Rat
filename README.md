@@ -141,7 +141,10 @@ Supported payload commands
                                 Chunk for the microphone (e.g 1024).
           -r RATE, --rate RATE  Rate (e.g 44100).
           
+     lockscreen
+     lock screen only on windows
+          
      help
      This help.
 ```
- <> with :heart: in HAITI 🇭🇹 
+ # <> with :heart: in HAITI 🇭🇹 
