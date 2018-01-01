@@ -17,10 +17,11 @@
     |||||||░  ░       ░ ░     ░  ░       ░       ░        ░              ░  ░                |||||||      (((_ _/   \_ _)))
     |||||||░                                                                                 |||||||
     
-Loki.Rat is a fork of the [Ares RAT](https://github.com/sweetsoftware/Ares), it integrates new modules, like the backdoor support for the android platform
+Loki.Rat is a fork of the [Ares RAT](https://github.com/sweetsoftware/Ares), it integrates new modules, like recording , lockscreen , and locate options.
 Loki.Rat is a Python Remote Access Tool.
 
 Warning: Only use this software according to your current legislation. Misuse of this software can raise legal and ethical issues which I don't support nor can be held responsible for.
+![Loki.Rat](https://3.bp.blogspot.com/-hCo9eJTSH5Y/WknUCULBwUI/AAAAAAAAAtY/i08DjoFqwLUsmnXhI7e5YX9AJuZmrjitQCLcBGAs/s1600/1234.png)
 
 Loki.Rat is made of two main programs:
 
@@ -102,6 +103,7 @@ Open a terminal windows and type this command :
                          row.
      --persistent          Automatically install the agent on first run.
 ```
+![Loki.Rat](https://4.bp.blogspot.com/-tbXl_inoyLc/WknUCUBGPPI/AAAAAAAAAtQ/upyR69qd7mguVq9HtgXx0cCbYZ3z5jcugCLcBGAs/s1600/12345.png)
 Supported payload commands
 ```
      <any shell command>
@@ -143,8 +145,12 @@ Supported payload commands
           
      lockscreen
      lock screen only on windows
+     
+     Geolocalisation
+     locate the target machine , and print the Latitude and Longitude
           
      help
      This help.
 ```
+![Loki.Rat](https://1.bp.blogspot.com/-WSolWnb_MPY/WknUCQKM9nI/AAAAAAAAAtU/1e7U7xDvT0ECJ-EDbxTCXbpM1kk9kr1WwCLcBGAs/s1600/123.png)
  # <> with :heart: in HAITI 🇭🇹 
