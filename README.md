@@ -55,13 +55,13 @@ Open a terminal windows and type this command :
  
  Run with the builtin (debug) server:
  ```
-     ./loki.py runserver -h 1.0.1.0 -p 8080 --threaded
+     ./loki.py runserver -h 127.0.0.1 -p 8080 --threaded
  ```
  Or run using gunicorn:
  ```
-     gunicorn loki:app -b 1.0.1.0:8080 --threads 20
+     gunicorn loki:app -b 127.0.0.1:8080 --threads 20
  ```
- The server should now be accessible on http://1.0.1.0:8080
+ The server should now be accessible on http://127.0.0.1:8080
  
  ## Payload
  Run the Python payload (update config.py to suit your needs):
@@ -88,7 +88,7 @@ Open a terminal windows and type this command :
      -h, --help            show this help message and exit
      -p PLATFORM, --platform PLATFORM
                          Target platform (Windows, Linux).
-     --server SERVER       Address of the CnC server (e.g http://1.0.1.0:8080).
+     --server SERVER       Address of the CnC server (e.g http://127.0.0.1:8080).
      -o OUTPUT, --output OUTPUT
                          Output file name.
      --hello-interval HELLO_INTERVAL
@@ -144,7 +144,7 @@ Supported payload commands
           -r RATE, --rate RATE  Rate (e.g 44100).
           
      lockscreen
-     lock screen only on windows
+     lock screen only on windows and Linux with Gnome environnement
      
      Geolocalisation
      locate the target machine , and print the Latitude and Longitude
