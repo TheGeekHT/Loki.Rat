@@ -22,6 +22,9 @@ Loki.Rat is a Python Remote Access Tool.
 
 # Join our Telegram Channel [Loki.Rat](https://t.me/LokiRat)
 
+
+[![How to Use Loki.Rat](https://img.youtube.com/vi/bA-N1lv57OI/0.jpg)](https://www.youtube.com/watch?v=bA-N1lv57OI)
+
 Warning: Only use this software according to your current legislation. Misuse of this software can raise legal and ethical issues which I don't support nor can be held responsible for.
 ![Loki.Rat](https://3.bp.blogspot.com/-hCo9eJTSH5Y/WknUCULBwUI/AAAAAAAAAtY/i08DjoFqwLUsmnXhI7e5YX9AJuZmrjitQCLcBGAs/s1600/1234.png)
 
